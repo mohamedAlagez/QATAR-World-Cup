@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --container: 144rem;
+    --m-auto: 0 auto;
+    --white: #fff;
+    --primary: #8a1538;
+    --secondary: #eeeee4;
+    --gr-1: rgba(138, 21, 56, 0.607);
+    --gr-2: rgba(138, 21, 56, 0.665);
+    --nav: rgba(225, 225, 225, 0.045);
+    --mobile-nav: #7d3e59;
+    --count-down-bg: rgba(238, 235, 235, 0.295);
+    --timer-before-bg: rgb(218, 201, 109);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 4.5rem;
+    background: linear-gradient(var(--gr-1), var(--gr-2)), url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 4rem 7rem;
+}
+
+.btn-primary {
+    width: 130px;
+    display: block;
+    font-size: 2rem;
+    padding:8px 17px;
+    border: 0.2rem solid #EEEEE4FF;
+    color: white;
+    font-weight: 500;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in;
+}
+
+.btn-primary:hover {
+    border-color: #EEEEE4FF;
+    color: #8A1538FF;
+    background: #EEEEE4FF;
+}
+
+.my-input{
+    font-family: 'Tajawal';
+    width: 380px;
+    display: block;
+    font-size: 2rem;
+    padding:8px 17px;
+    margin: 20px 0;
+    border: 0.2rem solid #EEEEE4FF;
+    color: #8a1538;
+    font-weight: 500;
+    border-radius: 3rem;
+}
+.hero-main-container {
+    padding: 4rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    text-align: center;
+    width: 50%;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-img {
+    width: 60%;
+    max-width: 45rem;
+}
+
+.section-heading {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #EEEEE4FF;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    color: white;
+    margin: 3rem 0;
+}
+
+@media (max-width: 904px) {
+    .hero-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 639px) {
+    .hero-image {
+        grid-row: 1;
+    }
+
+    .hero-img {
+        max-width: 30rem;
+    }
+}
